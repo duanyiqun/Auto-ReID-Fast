@@ -1,0 +1,79 @@
+ENV:
+    seed: 1024
+    fix_gpu_id: False
+
+AUG:
+    erasing_p: False
+    color_jitter: False
+    aug_for_train: train_baseline_aug
+    aug_for_val: val_baseline_aug
+
+DATA:
+    data_dir: Datasets/Market-1501-v15.09.15/image
+    train_all: False
+    
+TRAIN:
+    task_name: Baseline_model_DARTS_SGD_01_002_cosADAM_no_reidsearchspace_distributed
+    pin_memory: False
+    num_workers: 2
+    batch_size: 16
+    epochs: 210
+    train_all: True
+
+    loss_f: cross_entropy
+
+    optimizer_type: build_base_SGD_opt
+    lr_mode : wrap_cosine_lr
+    backbone_lr: 0.1
+    head_lr: 0.1
+    w_lr_min: 0.001
+    w_grad_clip: False
+
+    real_val_freq: 10
+    ## consine lr rate min unknown right now
+
+    warm_up: False
+    warm_epoch: 0
+    warmup_lr: 0.0
+    targetlr : 0.0
+
+    shuffle: True
+    momentum: 0.9
+    weight_decay: 0.00005
+    nesterov: True
+    forcesave: 20
+
+    logpath: ./log
+    checkpoint: './checkpoint'
+
+    print_freq: 10
+
+MODEL:
+    model_name : Darts_normal
+    Search_layers: 3
+    init_channels: 16
+    input_channels: 3
+
+    w_weight_decay: 0.00005
+    w_momentum: 0.9
+    w_lr: 0.1
+    
+    w_lr_min: 0.001
+
+    alpha_lr: 0.02
+    alpha_weight_decay: 0.00005
+
+    
+    
+    dropoutrate : 0.5
+    pretrain: False
+    reture_bottleneck_feature: False
+    return_middle_level_feature: False
+    PCB: False
+
+    plot_path: False
+    
+    
+
+TEST:
+    checkpoint_path : data/pretrained_model/regular_c109_n32.pth

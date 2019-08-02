@@ -1,0 +1,150 @@
+08/02 11:53:44 PM | Logger is set 
+08/02 11:53:44 PM | Logger with distribution
+08/02 11:54:34 PM | Initializing dataset used 50.563891649246216 basic time unit
+08/02 11:54:34 PM | Initializing dataset used 50.54020619392395 basic time unit
+08/02 11:54:34 PM | Initializing dataset used 50.56397032737732 basic time unit
+08/02 11:54:34 PM | Initializing dataset used 50.56028723716736 basic time unit
+08/02 11:54:34 PM | Initializing dataset used 50.54686880111694 basic time unit
+08/02 11:54:34 PM | Initializing dataset used 50.55365586280823 basic time unit
+08/02 11:54:34 PM | Initializing dataset used 50.05155944824219 basic time unit
+08/02 11:54:34 PM | Initializing dataset used 50.5641086101532 basic time unit
+08/02 11:54:34 PM | The training classes labels length :  751
+08/02 11:54:34 PM | The training classes labels length :  751
+08/02 11:54:34 PM | The training classes labels length :  751
+08/02 11:54:34 PM | The training classes labels length :  751
+08/02 11:54:34 PM | The training classes labels length :  751
+08/02 11:54:34 PM | The training classes labels length :  751
+08/02 11:54:34 PM | The training classes labels length :  751
+08/02 11:54:34 PM | The training classes labels length :  751
+08/02 11:56:30 PM | batch loading time example is 115.46116089820862
+08/02 11:56:30 PM | batch loading time example is 115.461354970932
+08/02 11:56:30 PM | batch loading time example is 115.45828676223755
+08/02 11:56:30 PM | batch loading time example is 115.46174764633179
+08/02 11:56:30 PM | batch loading time example is 115.4626522064209
+08/02 11:56:30 PM | batch loading time example is 115.46257901191711
+08/02 11:56:30 PM | batch loading time example is 115.46278715133667
+08/02 11:56:30 PM | batch loading time example is 115.4643907546997
+####### ALPHA #######
+# Alpha - normal
+tensor([[0.1428, 0.1428, 0.1430, 0.1426, 0.1429, 0.1430, 0.1428],
+        [0.1429, 0.1428, 0.1429, 0.1430, 0.1429, 0.1429, 0.1427]],
+       device='cuda:0', grad_fn=<SoftmaxBackward>)
+tensor([[0.1430, 0.1428, 0.1429, 0.1427, 0.1426, 0.1428, 0.1431],
+        [0.1430, 0.1429, 0.1430, 0.1431, 0.1426, 0.1427, 0.1428],
+        [0.1427, 0.1428, 0.1431, 0.1428, 0.1428, 0.1429, 0.1428]],
+       device='cuda:0', grad_fn=<SoftmaxBackward>)
+tensor([[0.1428, 0.1428, 0.1429, 0.1428, 0.1428, 0.1428, 0.1431],
+        [0.1431, 0.1428, 0.1428, 0.1428, 0.1427, 0.1429, 0.1429],
+        [0.1428, 0.1427, 0.1428, 0.1428, 0.1429, 0.1429, 0.1431],
+        [0.1427, 0.1429, 0.1427, 0.1430, 0.1428, 0.1429, 0.1429]],
+       device='cuda:0', grad_fn=<SoftmaxBackward>)
+tensor([[0.1428, 0.1429, 0.1427, 0.1429, 0.1429, 0.1428, 0.1429],
+        [0.1426, 0.1427, 0.1431, 0.1430, 0.1428, 0.1430, 0.1428],
+        [0.1428, 0.1427, 0.1432, 0.1430, 0.1427, 0.1428, 0.1427],
+        [0.1429, 0.1427, 0.1429, 0.1428, 0.1428, 0.1431, 0.1429],
+        [0.1429, 0.1426, 0.1429, 0.1429, 0.1428, 0.1430, 0.1428]],
+       device='cuda:0', grad_fn=<SoftmaxBackward>)
+
+# Alpha - reduce
+tensor([[0.1428, 0.1428, 0.1429, 0.1428, 0.1429, 0.1426, 0.1432],
+        [0.1428, 0.1427, 0.1430, 0.1429, 0.1431, 0.1429, 0.1427]],
+       device='cuda:0', grad_fn=<SoftmaxBackward>)
+tensor([[0.1430, 0.1429, 0.1429, 0.1428, 0.1428, 0.1429, 0.1428],
+        [0.1430, 0.1428, 0.1429, 0.1428, 0.1430, 0.1428, 0.1428],
+        [0.1431, 0.1427, 0.1429, 0.1427, 0.1428, 0.1429, 0.1429]],
+       device='cuda:0', grad_fn=<SoftmaxBackward>)
+tensor([[0.1429, 0.1427, 0.1427, 0.1429, 0.1426, 0.1430, 0.1431],
+        [0.1430, 0.1430, 0.1431, 0.1426, 0.1427, 0.1427, 0.1430],
+        [0.1431, 0.1428, 0.1426, 0.1429, 0.1429, 0.1430, 0.1427],
+        [0.1426, 0.1430, 0.1428, 0.1426, 0.1432, 0.1428, 0.1430]],
+       device='cuda:0', grad_fn=<SoftmaxBackward>)
+tensor([[0.1428, 0.1427, 0.1427, 0.1431, 0.1429, 0.1428, 0.1429],
+        [0.1432, 0.1430, 0.1427, 0.1428, 0.1427, 0.1430, 0.1427],
+        [0.1426, 0.1428, 0.1430, 0.1427, 0.1429, 0.1429, 0.1430],
+        [0.1427, 0.1430, 0.1430, 0.1427, 0.1427, 0.1428, 0.1430],
+        [0.1429, 0.1429, 0.1428, 0.1428, 0.1428, 0.1429, 0.1428]],
+       device='cuda:0', grad_fn=<SoftmaxBackward>)
+#####################
+08/03 12:00:16 AM | Train: [ 1/210] Step 000/404 Loss 3.313 Prec@(1,5) (0.0%, 0.0%)
+08/03 12:01:03 AM | Train: [ 1/210] Step 010/404 Loss 3.290 Prec@(1,5) (0.3%, 2.8%)
+08/03 12:01:50 AM | Train: [ 1/210] Step 020/404 Loss 3.322 Prec@(1,5) (0.4%, 3.4%)
+08/03 12:02:23 AM | Train: [ 1/210] Final Prec@1 0.5208%
+08/03 12:05:49 AM | Logger is set 
+08/03 12:05:49 AM | Logger with distribution
+08/03 12:08:02 AM | Logger is set 
+08/03 12:08:02 AM | Logger with distribution
+08/03 12:08:53 AM | Initializing dataset used 50.89324331283569 basic time unit
+08/03 12:08:53 AM | Initializing dataset used 50.863051414489746 basic time unit
+08/03 12:08:53 AM | Initializing dataset used 50.90372133255005 basic time unit
+08/03 12:08:53 AM | Initializing dataset used 50.42196702957153 basic time unit
+08/03 12:08:53 AM | Initializing dataset used 50.88658618927002 basic time unit
+08/03 12:08:53 AM | Initializing dataset used 50.87997031211853 basic time unit
+08/03 12:08:53 AM | Initializing dataset used 50.900020599365234 basic time unit
+08/03 12:08:53 AM | Initializing dataset used 50.873414754867554 basic time unit
+08/03 12:08:53 AM | The training classes labels length :  751
+08/03 12:08:53 AM | The training classes labels length :  751
+08/03 12:08:53 AM | The training classes labels length :  751
+08/03 12:08:53 AM | The training classes labels length :  751
+08/03 12:08:53 AM | The training classes labels length :  751
+08/03 12:08:53 AM | The training classes labels length :  751
+08/03 12:08:53 AM | The training classes labels length :  751
+08/03 12:08:53 AM | The training classes labels length :  751
+08/03 12:10:55 AM | batch loading time example is 122.04099583625793
+08/03 12:10:55 AM | batch loading time example is 122.04069495201111
+08/03 12:10:55 AM | batch loading time example is 122.0408661365509
+08/03 12:10:55 AM | batch loading time example is 122.04095983505249
+08/03 12:10:55 AM | batch loading time example is 122.04107904434204
+08/03 12:10:55 AM | batch loading time example is 122.04112792015076
+08/03 12:10:55 AM | batch loading time example is 122.03818941116333
+08/03 12:10:55 AM | batch loading time example is 122.04104256629944
+####### ALPHA #######
+# Alpha - normal
+tensor([[0.1428, 0.1428, 0.1430, 0.1426, 0.1429, 0.1430, 0.1428],
+        [0.1429, 0.1428, 0.1429, 0.1430, 0.1429, 0.1429, 0.1427]],
+       device='cuda:0', grad_fn=<SoftmaxBackward>)
+tensor([[0.1430, 0.1428, 0.1429, 0.1427, 0.1426, 0.1428, 0.1431],
+        [0.1430, 0.1429, 0.1430, 0.1431, 0.1426, 0.1427, 0.1428],
+        [0.1427, 0.1428, 0.1431, 0.1428, 0.1428, 0.1429, 0.1428]],
+       device='cuda:0', grad_fn=<SoftmaxBackward>)
+tensor([[0.1428, 0.1428, 0.1429, 0.1428, 0.1428, 0.1428, 0.1431],
+        [0.1431, 0.1428, 0.1428, 0.1428, 0.1427, 0.1429, 0.1429],
+        [0.1428, 0.1427, 0.1428, 0.1428, 0.1429, 0.1429, 0.1431],
+        [0.1427, 0.1429, 0.1427, 0.1430, 0.1428, 0.1429, 0.1429]],
+       device='cuda:0', grad_fn=<SoftmaxBackward>)
+tensor([[0.1428, 0.1429, 0.1427, 0.1429, 0.1429, 0.1428, 0.1429],
+        [0.1426, 0.1427, 0.1431, 0.1430, 0.1428, 0.1430, 0.1428],
+        [0.1428, 0.1427, 0.1432, 0.1430, 0.1427, 0.1428, 0.1427],
+        [0.1429, 0.1427, 0.1429, 0.1428, 0.1428, 0.1431, 0.1429],
+        [0.1429, 0.1426, 0.1429, 0.1429, 0.1428, 0.1430, 0.1428]],
+       device='cuda:0', grad_fn=<SoftmaxBackward>)
+
+# Alpha - reduce
+tensor([[0.1428, 0.1428, 0.1429, 0.1428, 0.1429, 0.1426, 0.1432],
+        [0.1428, 0.1427, 0.1430, 0.1429, 0.1431, 0.1429, 0.1427]],
+       device='cuda:0', grad_fn=<SoftmaxBackward>)
+tensor([[0.1430, 0.1429, 0.1429, 0.1428, 0.1428, 0.1429, 0.1428],
+        [0.1430, 0.1428, 0.1429, 0.1428, 0.1430, 0.1428, 0.1428],
+        [0.1431, 0.1427, 0.1429, 0.1427, 0.1428, 0.1429, 0.1429]],
+       device='cuda:0', grad_fn=<SoftmaxBackward>)
+tensor([[0.1429, 0.1427, 0.1427, 0.1429, 0.1426, 0.1430, 0.1431],
+        [0.1430, 0.1430, 0.1431, 0.1426, 0.1427, 0.1427, 0.1430],
+        [0.1431, 0.1428, 0.1426, 0.1429, 0.1429, 0.1430, 0.1427],
+        [0.1426, 0.1430, 0.1428, 0.1426, 0.1432, 0.1428, 0.1430]],
+       device='cuda:0', grad_fn=<SoftmaxBackward>)
+tensor([[0.1428, 0.1427, 0.1427, 0.1431, 0.1429, 0.1428, 0.1429],
+        [0.1432, 0.1430, 0.1427, 0.1428, 0.1427, 0.1430, 0.1427],
+        [0.1426, 0.1428, 0.1430, 0.1427, 0.1429, 0.1429, 0.1430],
+        [0.1427, 0.1430, 0.1430, 0.1427, 0.1427, 0.1428, 0.1430],
+        [0.1429, 0.1429, 0.1428, 0.1428, 0.1428, 0.1429, 0.1428]],
+       device='cuda:0', grad_fn=<SoftmaxBackward>)
+#####################
+08/03 12:14:53 AM | Train: [ 1/210] Step 000/404 Loss 3.621 Prec@(1,5) (0.0%, 0.0%)
+08/03 12:15:41 AM | Train: [ 1/210] Step 010/404 Loss 3.805 Prec@(1,5) (0.3%, 2.0%)
+08/03 12:16:27 AM | Train: [ 1/210] Step 020/404 Loss 3.847 Prec@(1,5) (0.1%, 1.2%)
+08/03 12:17:01 AM | Train: [ 1/210] Final Prec@1 0.2604%
+08/03 12:18:50 AM | Valid: [ 1/210] Step 000/023 Loss 4.034 Prec@(1,5) (0.0%, 0.0%)
+08/03 12:18:53 AM | Valid: [ 1/210] Step 010/023 Loss 3.973 Prec@(1,5) (0.0%, 1.4%)
+08/03 12:18:56 AM | Valid: [ 1/210] Step 020/023 Loss 3.934 Prec@(1,5) (0.0%, 1.2%)
+08/03 12:19:02 AM | Valid: [ 1/210] Final Prec@1 0.0000%, Prec@5 1.0870%, Prec@10 2.1739%
+08/03 12:19:02 AM | Final best Prec@1 = 0.0000%
+08/03 12:19:02 AM | genotype = Genotype(normal=[[('dil_conv_3x3', 0), ('partial_aware_1x1', 1)], [('dil_conv_3x3', 1), ('partial_aware_1x1', 0)], [('dil_conv_3x3', 1), ('dil_conv_3x3', 3)], [('partial_aware_1x1', 4), ('skip_connect', 1)]], normal_concat=range(2, 6), reduce=[[('partial_aware_1x1', 1), ('partial_aware_1x1', 0)], [('partial_aware_1x1', 2), ('partial_aware_1x1', 1)], [('partial_aware_1x1', 3), ('partial_aware_1x1', 2)], [('dil_conv_3x3', 4), ('partial_aware_1x1', 1)]], reduce_concat=range(2, 6))
