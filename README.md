@@ -86,12 +86,12 @@ srun -n your_node_nums --gres gpu:gpunums -p your_partition python train_baselin
 接下来是训练的一些可视化
 
 TensorBoard 可视化：
-![tensorboard](image/tensorboard.png)
+![tensorboard](./image/tensorboard.png)
 
 训练可视化
 特别打印了每个卡的参数
 
-![train](image/train.png)
+![train](./image/train.png)
 
 搜索出的图可视化
 
