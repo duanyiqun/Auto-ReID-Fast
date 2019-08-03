@@ -39,6 +39,15 @@ Update August 2th: integrate DARTS genotypes into tensorboard, you could see how
 
 ```bash
 conda create -n auto-reid python=3.6
+conda install pip
+conda install -c pytorch torch torchvision
+conda install pyyaml
+pip install graphviz
+pip install tensorboardX
+pip install apex
+
+
+
 python setup.py install
 ```
 
