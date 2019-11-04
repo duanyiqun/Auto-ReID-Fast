@@ -81,21 +81,10 @@ srun -n your_node_nums --gres gpu:gpunums -p your_partition python train_baselin
   + triplet loss 加速，循环的方法太慢了， 采用矩阵优化，这部分我写的比较细，加了注释。特别值得注意的一点是，目前这个论文里面的triplet loss 公式可能写错了， 他的正样本和负样本符号写反了，这个实现里改掉了错误的loss。
   + part_aware Module 集成到DARTS 搜索空间， debug 解决feature map 对其。优化了repeat模块，减少内存消耗和操作。
   + 集成测试，训练，可视化，编写readme
- 
 
 对于可能的后续改进来说，可能有两个方面
   1. 往搜索方面做，这篇论文对于搜索空间上来说可能只是改变了一个op， 对拓扑没有限制，对其他op也没有限制，如果后续改进这可能是一个方向。
   2.  往re-id 的openset上面做，感觉工程上面openset 会更加实用一些。  
-
-接下来是训练的一些可视化
-
-TensorBoard 可视化：
-![tensorboard](Image/tensorboard.png)
-
-训练可视化
-特别打印了每个卡的参数
-
-![train](Image/train.png)
 
 搜索出的图可视化
 
