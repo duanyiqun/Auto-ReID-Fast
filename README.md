@@ -86,6 +86,3 @@ srun -n your_node_nums --gres gpu:gpunums -p your_partition python train_baselin
   1. 往搜索方面做，这篇论文对于搜索空间上来说可能只是改变了一个op， 对拓扑没有限制，对其他op也没有限制，如果后续改进这可能是一个方向。
   2.  往re-id 的openset上面做，感觉工程上面openset 会更加实用一些。  
 
-搜索出的图可视化
-
-![genotype](searched_genotypes/Retrieval_loss_model_DARTS_SGD_reidspace_distributed/EP02-reduce.png)
