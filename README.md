@@ -78,7 +78,7 @@ srun -n your_node_nums --gres gpu:gpunums -p your_partition python train_baselin
   + 解决分布式batch 采样的问题，开始测试并且撰写 Part aware module
 + day5: 
   + 解决按类采样的问题， 这个问题和分布式后端加在一起比较难处理，后来还是维护了一个长list
-  + triplet loss 加速，循环的方法太慢了， 采用矩阵优化，这部分我写的比较细，加了注释。特别值得注意的一点是，目前这个论文里面的triplet loss 公式可能写错了， 他的正样本和负样本符号写反了，这个实现里改掉了错误的loss。
+  + triplet loss 加速，循环的方法太慢了， 采用矩阵优化，这部分我写的比较细，加了注释。特别值得注意的一点是，目前这个论文里面的triplet loss 公式可能写错了， 正样本和负样本符号可能写反了，这个实现里和论文中符号是相反的。
   + part_aware Module 集成到DARTS 搜索空间， debug 解决feature map 对其。优化了repeat模块，减少内存消耗和操作。
   + 集成测试，训练，可视化，编写readme
 
