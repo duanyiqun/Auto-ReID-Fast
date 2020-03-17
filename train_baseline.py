@@ -58,8 +58,6 @@ if args.fix_gpu_id == False and torch.cuda.is_available():
 else:
     device = torch.device("cpu")
 
-
-
 #####################################################################
 ### history for draw graph
 
@@ -88,9 +86,6 @@ def save_network(args, network, epoch_label, top1, isbest= False):
     checkpoint['epoch'] = epoch_label
     checkpoint['top1'] = top1
     torch.save(checkpoint, save_path)
-
-
-
 
 def train(args, train_loader, valid_loader, model, woptimizer, lr_scheduler, epoch=0, criterion= False):
     print('-------------------training_start at epoch {}---------------------'.format(epoch))
@@ -230,11 +225,8 @@ def train(args, train_loader, valid_loader, model, woptimizer, lr_scheduler, epo
     else:
         if epoch % args.forcesave ==0:
             save_network(args,model,epoch,top1)
-        
-        
-    
-        
 
+    
 def validate(args, valid_loader, model, epoch=0, criterion= False, cur_step = 0):
     print('-------------------validation_start at epoch {}---------------------'.format(epoch))
     top1 = metrics.AverageMeter()
@@ -323,19 +315,10 @@ def validate(args, valid_loader, model, epoch=0, criterion= False, cur_step = 0)
 
         logger.info("Valid: [{:2d}/{}] Final Prec@1 {:.4%}, Prec@5 {:.4%}, Prec@10 {:.4%}".format(epoch+1, args.epochs, top1.avg, top5.avg, top10.avg))
 
-
-
     return top1.avg
 
     
-    
-    
     #optimizer, scheduler
-
-    
-
-    
-    
 
 def main():
     global args, use_gpu, writer, rank, logger, best_top1, world_size, rank
@@ -483,17 +466,6 @@ def main():
                 #logger.info("Best Genotype = {}".format(best_genotype))
         else:
             logger.info("Final best Prec@1 = {:.4%}".format(best_top1))
-    
-    
-
-    
-
-
-    
-    
-    
-    
-    
 
 
 if __name__ == '__main__':
