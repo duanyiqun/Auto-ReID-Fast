@@ -38,9 +38,6 @@ conda install pyyaml
 pip install graphviz
 pip install tensorboardX
 pip install apex
-
-
-
 python setup.py install
 ```
 
